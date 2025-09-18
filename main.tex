@@ -1,8 +1,14 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 
-\title{AIInEcologyReviewProtocol}
-\author{pooherna }
+\newcommand{\ben}{\begin{enumerate}}
+\newcommand{\een}{\end{enumerate}}
+\newcommand{\bei}{\begin{itemize}}
+\newcommand{\eei}{\end{itemize}}
+\newcommand{\ie}{\item}
+
+\title{A review of the use of Artificial Intelligence in Ecology}
+\author{Sergio Poo Hernandez}
 \date{September 2025}
 
 \begin{document}
@@ -10,24 +16,34 @@
 \maketitle
 
 \section{Questions}
-What ecological applications of Artificial Intelligence (AI) have been reviewed, and which ecological study types and AI model types (e.g., supervised, deep learning) are most frequently considered in this secondary literature?
-How many of the reviews have been systematic and what are the scope of them?
-What are the prevailing research trends, identified challenges, and highlighted future directions in the existing reviews on the use of AI in ecology? 
-Are new AI methods widely adopted in ecological applications as soon as they are available, or is there a delay in adoption?
-Are there older methods abandoned or still useful in some areas?
-Based on a synthesis of the secondary literature, what are the most significant knowledge gaps and methodological limitations in the application of AI to solve ecological problems?
-What is the reach of these studies in policy generation and in their respective fields?
-How often are the reviews used by others?
-Is there a difference between systematic and narrative reviews?
-Origin of the studies of interest.
+\ben
+\item What ecological applications of Artificial Intelligence (AI) have been reviewed, and which ecological study types and AI model types (e.g., supervised, deep learning) are most frequently considered in this secondary literature?
+\ben
+\item How many of the reviews have been systematic and what are the scope of them?
+\een
+\item What are the prevailing research trends, identified challenges, and highlighted future directions in the existing reviews on the use of AI in ecology? 
+\ben
+\item Are new AI methods widely adopted in ecological applications as soon as they are available, or is there a delay in adoption?
+\item Are there older methods abandoned or still useful in some areas?
+\een
+\item Based on a synthesis of the secondary literature, what are the most significant knowledge gaps and methodological limitations in the application of AI to solve ecological problems?
+\item What is the reach of these studies in policy generation and in their respective fields?
+\ben
+\item How often are the reviews used by others?
+\item Is there a difference between systematic and narrative reviews?
+\item Origin of the studies of interest.
+\een
+\een
 
 \section{Inclusion and exclusion criteria}
 \subsection{Population}
 Inclusion: reviews must focus on AI (or Machine Learning and Deep Learning) applications in any biological system, including organismal, or ecological levels. Studies on mixed domains are included if biological applications are a substantial focus. Domain is in journal
+
 Exclusion: Exclude reviews where the analytical focus is exclusively on non-biological systems (e.g., finance, engineering, computer vision without a biological application) or on humans for purely clinical/biomedical purposes, or application in biological systems on the molecular or cellular levels.
 
 \subsection{Exposure}
 Inclusion: Reviews must explicitly analyze Machine Learning (ML), Deep Learning (DL), or Artificial Intelligence (AI) as a distinct set of tools. This includes supervised, unsupervised, and reinforcement learning methods.
+
 Exclusion: Exclude reviews focusing solely on traditional statistical methods (e.g., linear regression, ANOVA) without framing them in the context of AI. Exclude reviews where AI is not a central theme or cannot be distinguished from other computational methods. Exclude reviews focusing only on data collection for remote sensing.
 
 \subsection{Comparator}
@@ -35,45 +51,59 @@ Not applicable
 
 \subsection{Outcome}
 Inclusion: The review must discuss the outcomes of applying AI, such as prediction, classification, clustering, or generation of biological data. This includes outcomes like modeling ecological systems or classifying species from images.
+
 Exclusion: Exclude studies focused only on the theoretical or mathematical aspects of AI algorithms without discussing their application or impact in a biological context. Exclude papers on software development that do not review the outcomes of its use
 
 \subsection{Study type}
 Inclusion: Only secondary literature, specifically systematic reviews, systematic maps, meta-analyses, and narrative/scoping reviews that synthesize primary literature, will be included. Studies must be peer-reviewed.
+
 Exclusion: Exclude primary research articles, editorials, opinion pieces, book chapters.
 
 \section{Benchmark papers}
-Algorithms going wild – A review of machine learning techniques for terrestrial ecology
-Towards the fully automated monitoring of ecological communities
-Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook
-Application of machine-learning methods in forest ecology: recent progress and future challenges
-Deep learning as a tool for ecology and evolution
-Machine learning and deep learning—A review for ecologists
-MACHINE LEARNING METHODS WITHOUT TEARS: A PRIMER FOR ECOLOGISTS
-‘Small Data’ for big insights in ecology
-Machine learning in landscape ecological analysis: a review of recent approaches
-Artificial Intelligence in Landscape Ecology: Recent Advances, Perspectives, and Opportunities
-Generative AI as a tool to accelerate the field of ecology
+\bei
+\item Algorithms going wild – A review of machine learning techniques for terrestrial ecology
+\item Towards the fully automated monitoring of ecological communities
+\item Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook
+\item Application of machine-learning methods in forest ecology: recent progress and future challenges
+\item Deep learning as a tool for ecology and evolution
+\item Machine learning and deep learning—A review for ecologists
+\item MACHINE LEARNING METHODS WITHOUT TEARS: A PRIMER FOR ECOLOGISTS
+\item ‘Small Data’ for big insights in ecology
+\item Machine learning in landscape ecological analysis: a review of recent approaches
+\item Artificial Intelligence in Landscape Ecology: Recent Advances, Perspectives, and Opportunities
+\item Generative AI as a tool to accelerate the field of ecology
+\eei
 
 \section{Search strings}
 \subsection{Web of Science}
 1st search string
+
 TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (Ecolog* OR (Evolution* NEAR/3 biology) NOT medic* NOT microb* NOT land*) AND (("review" NOT (review NEAR/3 human)) OR "systematic map" OR "survey" OR "recent advancements" OR insight)) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
+
+
 2nd search string
+
 TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (review* OR "systematic map*" OR "survey*" OR "recent advancement*" OR insight*)) AND SU=("Ecology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation")
+
 Putting limitations for Web of Science Categories:
+
 Include:
-Remote Sensing
-Ecology
-Marine Freshwater Biology
-Evolutionary Biology
-Plant Sciences
-Biology
-Zoology
-Entomology
-Ornithology
-Fisheries
+\bei
+\item Remote Sensing
+\item Ecology
+\item Marine Freshwater Biology
+\item Evolutionary Biology
+\item Plant Sciences
+\item Biology
+\item Zoology
+\item Entomology
+\item Ornithology
+\item Fisheries
+\eei
 NOT include:
-Environmental Sciences
+\bei
+\item Environmental Sciences
+\eei
 
 
 \end{document}
