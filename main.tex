@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
+\usepackage{longtable}
 
 \newcommand{\ben}{\begin{enumerate}}
 \newcommand{\een}{\end{enumerate}}
@@ -105,5 +106,62 @@ NOT include:
 \item Environmental Sciences
 \eei
 
+\subsection{Scopus}
+SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR "Large Language Models" ) AND ( Ecolog* OR Evolution* ) AND ( "review" OR "systematic map" OR "survey" OR "recent advancements" OR insight ) )
+
+\section{Code book}
+%\begin{table}[h]
+    \begin{longtable}{p{1.5cm}p{3cm}p{3cm}p{3cm}}
+%    \centering
+        \hline
+         \textbf{Variable} & \textbf{Description} & \textbf{Format/Allowed values} & \textbf{Notes}\\
+         \hline
+        extractor initial & Initials of the data extractor & Text (e.g., ALM, ML) & For inter-rate calibration and audit trail\\
+        study id & Unique ID assigned to the review. & Text (e.g., pichler\_2023) & Use firstauthor\_year format\\
+        doi & Digital Object Identifier of the review & Text (e.g., 10.1111/2041-210X.14096) & Extract from journal metadata\\
+        year & Year of publication & YYYY & Extract from journal metadata\\
+        review type & The main type of secondary review & Systematic review, Systematic map, Meta-analysis, Narrative review, Scoping review & Assign one value based on what the authors explicitly state\\
+        primary study design & The main type of study design of primary studies included in the review & Experimental, Observational, Simulation, Mixed, Unclear & Use "Mixed" if multiple apply. Use "Unclear" if not explicitly stated\\
+        mentions n studies & Does the review report the number of studies it looked at? & Yes, No & Must be explicitly reported. If yes record n\_studies, if no leave n\_studies empty\\
+        n studies & The number of primary studies synthesized in the review & Integer & Must be explicitly reported. Refers to the number of publications, not experiments or effect sizes\\
+        biology domain & The primary biological domain(s) of focus & Ecology, Bioinformatics, Medicine, Systems Biology, Mixed, Other, Unclear & Multiple categories are allowed. "Mixed" for reviews covering many domains\\
+        data source type & The source of data used in the primary studies reviewed & Field-collected, Lab-generated, Public repository, Mixed, Unclear & Refers to the origin of the data that ML models are trained on\\
+        ai model category & Broad category of AI models discussed & Supervised, Unsupervised, Reinforcement, Mixed & Multiple categories are allowed\\
+        specific algorithms & Does the review focus on a specific, named algorithm or architecture? & Yes, No, Unclear & Yes for a focus like "Random Forest" or "Convolutional Neural Networks."\\
+        specific algorithms comment & If yes, what specific algorithms or architectures are mentioned? & Free text & List the exact terms used by the authors (e.g., SVM, GAN, AlphaFold)\\
+        ai algorithms & What specific AI algorithms are reviewed & CNN, RNN, LLM, Decision trees, boosted regression trees, random forest, SVM & Multiple categories, only some examples are included since more classifications may be acceptable\\
+        ai algorithms comments & Any observations about the Ai algorithms listed in the review & Free text & \\
+        compared to stats & Does the review explicitly compare AI models to traditional statistical methods? & Yes, No, Unclear & Yes if there is a direct comparison to methods like linear/logistic regression\\
+        application goal & The broad category of the task or goal the ML models are used for & Classification, Prediction/Regression, Clustering, Dimensionality Reduction, Generation, Other, Mixed & Multiple categories are allowed. This describes what the model is doing\\
+        application goal comment & A specific description of the application goals & Free text & Provide more detail, e.g., "Classifying species from images," "Predicting protein structure."\\
+        datatype used & Categories of the data used for the AI models & Audio, Video, Images, Numeric, Mixed & Multiple categories are allowed\\
+        performance moderators & Does the review assess factors that modify or influence ML model performance? & Yes, No, Unclear & Yes if the review discusses how things like dataset size, data quality, or hyperparameter tuning affect outcomes\\
+        performance moderators comment & If yes, name the interacting factors or moderators considered & Free text & List exact terms used (e.g., sample size, feature engineering, class imbalance)\\
+        temporal analysis & Does the review do any temporal analysis of the data reviewed? & Yes, No & Yes if there is a comparison through time of any of the reviewed data. No otherwise\\
+        temporal analysis comment & If yes, what kind of analysis was made & Free text & List what elements are compared through time\\
+        identified gaps & Does the review explicitly identify gaps in the research? & Yes, No, Unclear & Yes if the authors state what is missing or needs more work\\
+        identified gaps comment & If yes, what research gaps are mentioned? & Free text & List the exact gaps identified (e.g., Need for more interpretable models, Lack of causal inference methods)\\
+        general notes & Any other relevant comments or observations & Free text & Use for important context not captured elsewhere (e.g., "Main focus was on deep learning, but briefly mentioned classical ML")\\
+         \hline
+    \end{longtable}
+    %\label{tab:satMapsvscoordinates}
+%\end{table}
+
+\section{Biobliometric analisys}
+\begin{longtable}{p{1.5cm}p{3cm}p{3cm}p{3cm}}
+%    \centering
+        \hline
+         \textbf{Variable} & \textbf{Description} & \textbf{Format/Allowed values} & \textbf{Notes}\\
+         \hline
+         doi & Digital Object Identifier of the review & Text (e.g., 10.1111/2041-210X.14096) & Extract from journal metadata\\
+         authors & Full list of authors & Free text & \\
+         affiliation & Institutional and country affiliations & Free text & \\
+         corr country affiliation & Country of first or corresponding author & Country name & \\
+         n authors & Number of authors & Integer & \\
+         citations scopus & Citation counts from Scopus & Integer & \\
+         citations web of science & Citation counts from Web of Science & Integer & \\
+         policy citations & Policy citation counts & Integer & \\
+
+\end{longtable}
 
 \end{document}
