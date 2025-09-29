@@ -16,29 +16,29 @@
 
 \maketitle
 
+\section{Introduction}
+
+Artificial Intelligence (AI) methods have been used to automate tasks since the concept was created. As new and more advanced algorithms are developed the number of tasks that are automate has increased. This is no different in the field of Ecology. But how has the field adapted to new technologies? How eager are ecologists to adopt new methods and abandon older ones? In this review we aim to get a better understanding of the adoption trends in the field of Ecology. The following section highlights the questions we are interested in answering.
+
 \section{Questions}
 \ben
 \item What ecological applications of Artificial Intelligence (AI) have been reviewed, and which ecological study types and AI model types (e.g., supervised, deep learning) are most frequently considered in this secondary literature?
-\ben
-\item How many of the reviews have been systematic and what are the scope of them?
-\een
-\item What are the prevailing research trends, identified challenges, and highlighted future directions in the existing reviews on the use of AI in ecology? 
+\item What are the prevailing research trends, identified challenges, and future directions in existing reviews on the use of AI in ecology? 
 \ben
 \item Are new AI methods widely adopted in ecological applications as soon as they are available, or is there a delay in adoption?
-\item Are there older methods abandoned or still useful in some areas?
+\item Are older methods still used, and in what areas?
 \een
 \item Based on a synthesis of the secondary literature, what are the most significant knowledge gaps and methodological limitations in the application of AI to solve ecological problems?
 \item What is the reach of these studies in policy generation and in their respective fields?
 \ben
 \item How often are the reviews used by others?
-\item Is there a difference between systematic and narrative reviews?
-\item Origin of the studies of interest.
+\item What are the collaboration patterns in the existing systematic reviews on this topic?
 \een
 \een
 
 \section{Inclusion and exclusion criteria}
 \subsection{Population}
-Inclusion: reviews must focus on AI (or Machine Learning and Deep Learning) applications in any biological system, including organismal, or ecological levels. Studies on mixed domains are included if biological applications are a substantial focus. Domain is in journal
+Inclusion: reviews must focus on AI (or Machine Learning and Deep Learning) applications in any biological system, including organismal, or ecological levels. Studies on mixed domains are included if biological applications are a substantial focus.
 
 Exclusion: Exclude reviews where the analytical focus is exclusively on non-biological systems (e.g., finance, engineering, computer vision without a biological application) or on humans for purely clinical/biomedical purposes, or application in biological systems on the molecular or cellular levels.
 
@@ -51,14 +51,14 @@ Exclusion: Exclude reviews focusing solely on traditional statistical methods (e
 Not applicable
 
 \subsection{Outcome}
-Inclusion: The review must discuss the outcomes of applying AI, such as prediction, classification, clustering, or generation of biological data. This includes outcomes like modeling ecological systems or classifying species from images.
+Inclusion: The review must discuss the outcomes of applying AI, such as prediction, classification, clustering, or generation of biological data. This includes outcomes such as modeling ecological systems or classifying species from images.
 
-Exclusion: Exclude studies focused only on the theoretical or mathematical aspects of AI algorithms without discussing their application or impact in a biological context. Exclude papers on software development that do not review the outcomes of its use
+Exclusion: Exclude studies focused only on the theoretical or mathematical aspects of AI algorithms without discussing their application or impact in a biological context. Exclude papers on software development that do not review the outcomes of its use.
 
 \subsection{Study type}
-Inclusion: Only secondary literature, specifically systematic reviews, systematic maps, meta-analyses, and narrative/scoping reviews that synthesize primary literature, will be included. Studies must be peer-reviewed.
+Inclusion: Only secondary literature, specifically systematic reviews, systematic maps and meta-analyses that synthesize primary literature, will be included. Studies must be peer-reviewed.
 
-Exclusion: Exclude primary research articles, editorials, opinion pieces, book chapters.
+Exclusion: Exclude primary research articles, editorials, opinion pieces, book chapters, and narrative/scoping reviews.
 
 \section{Benchmark papers}
 \bei
@@ -81,6 +81,7 @@ Exclusion: Exclude primary research articles, editorials, opinion pieces, book c
 
 TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (Ecolog* OR (Evolution* NEAR/3 biology) NOT medic* NOT microb* NOT land*) AND (("review" NOT (review NEAR/3 human)) OR "systematic map" OR "survey" OR "recent advancements" OR insight)) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
 
+Results in $1184$ articles.
 
 2nd search string
 
@@ -106,8 +107,12 @@ NOT include:
 \item Environmental Sciences
 \eei
 
+Results in $992$ articles.
+
 \subsection{Scopus}
 SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR "Large Language Models" ) AND ( Ecolog* OR Evolution* ) AND ( "review" OR "systematic map" OR "survey" OR "recent advancements" OR insight ) )
+
+Results in $1354$ articles.
 
 \section{Code book}
 %\begin{table}[h]
@@ -147,7 +152,7 @@ SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" 
     %\label{tab:satMapsvscoordinates}
 %\end{table}
 
-\section{Biobliometric analisys}
+\section{Bibliometric data}
 \begin{longtable}{p{1.5cm}p{3cm}p{3cm}p{3cm}}
 %    \centering
         \hline
@@ -163,5 +168,12 @@ SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" 
          policy citations & Policy citation counts & Integer & \\
 
 \end{longtable}
+
+\section{Time estimations}
+
+We estimate the time for data extraction for each type of review as the average time it took to do the extraction on the papers that are in our benchmark. The average is $14.5$ minutes. We expect to perform data extraction on 60 reviews, so data extraction is estimated to take $870$ minutes.
+
+\section{Pilot}
+
 
 \end{document}
