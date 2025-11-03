@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{longtable}
+\usepackage{authblk}
 
 \newcommand{\ben}{\begin{enumerate}}
 \newcommand{\een}{\end{enumerate}}
@@ -8,9 +9,17 @@
 \newcommand{\eei}{\end{itemize}}
 \newcommand{\ie}{\item}
 
-\title{A review of the use of Artificial Intelligence in Ecology}
-\author{Sergio Poo Hernandez}
-\date{October 2025}
+\title{A systematic map of the reviews on Artificial Intelligence in Ecology}
+\author{Sergio Poo Hernandez{*}}
+\author{Santiago Ortega}
+\author{Ayumi Mizuno}
+\author{Eduardo Santos}
+\author{Malgorzata Lagisz}
+\author{Shinichi Nakagawa}
+
+\affil{University of Alberta}
+
+\date{3rd November 2025}
 
 \begin{document}
 
@@ -18,25 +27,39 @@
 
 \section{Background}
 
-One of the main purposes of Artificial Intelligence (AI) methods has been task automation. When a new AI method is developed, users test it in different tasks to determine what can now be automated. This is no different in the field of Ecology. In this review, our aim is to understand the trends in the adoption of AI methods in the field of Ecology. How often has the field adapted to new technologies? How eager are ecologists to adopt new methods and abandon older ones?
+One of the main purposes of Artificial Intelligence (AI) methods has been to automate tasks. When a new AI method is developed, users test it in different tasks to determine what can now be automated. Reviews on the use of AI in Ecology offer a summary of how these methods are used across the field and, as such, are often used by researchers to understand the overall state of AI use in Ecology. However, with the increase in the volume of scientific research (primary literature), there has also been an increase in the number of reviews (secondary literature). Such an increase presents a challenge to staying up to date on the topic. Also, given the field's breadth, a researcher interested in an overall summary of the subject would need to review several reviews. These issues can be solved by a review of reviews, which provides an overarching view of the evidence collected by reviews \cite{biondi2016umbrella}. As with systematic reviews, a review of reviews includes a critical appraisal of the included reviews. The critical appraisal is important to identify any variability in the methodologies used in the included reviews, because disregarding these differences risks providing a distorted, misinformed view of the field.
 
-\section{Research questions}
+%In this review of reviews, our aim is to understand trends in the use of AI methods in Ecology by reviewing systematic maps and reviews.
+
+\section{Objectives}
+In this study, we assess the secondary literature, specifically systematic reviews and systematic maps (not including narrative reviews), on AI methods in the field of Ecology. Our approach combines systematic mapping with appraisal and bibliometric analysis. 
+
+We have three main objectives:
 \ben
-\item What ecological applications of Artificial Intelligence (AI) have been reviewed, and which ecological study types and AI model types (e.g., supervised, deep learning) are most frequently considered in this secondary literature?
-\item What are the prevailing research trends, identified challenges, and future directions in existing reviews on the use of AI in ecology? 
-\ben
-\item Are new AI methods widely adopted in ecological applications as soon as they are available, or is there a delay in adoption?
-\item Are older methods still used, and in what areas?
+\item Reveal trends in the coverage, in the systematic reviews and maps, of the different AI methods used in the field of Ecology, and identify any knowledge gaps and biases. 
+\item Perform a critical appraisal of the systematic reviews and maps to assess their reporting quality and identify their strengths and shortcomings. 
+\item Quantify the reach and impact of the systematic reviews and maps in the field through bibliometric analyzes, including locations of origin (e.g., affiliations, countries), collaboration patterns, and citations.
 \een
-\item Based on a synthesis of the secondary literature, what are the most significant knowledge gaps and methodological limitations in the application of AI to solve ecological problems?
-\item What is the reach of these studies in policy generation and in their respective fields?
-\ben
-\item How often are the reviews cited by others?
-\item What are the collaboration patterns in the existing systematic reviews on this topic?
-\een
-\een
+
+%We have three main objectives. The first objective is to determine which AI methods are used in the field of Ecology and identify trends in their adoption, when new technologies first become relevant, and in which areas of the field. We also aim to identify any knowledge gaps in the literature. Our second objective is to perform a critical appraisal of the reviews to assess their quality and identify strengths and failings in the literature. Finally, we aim to identify the reach and impact of the reviews in the field through bibliometric analyzes; to help us determine points of origin, collaboration patterns, and how much reviews are used through citations.
+
+%\ben
+%\item What ecological applications of Artificial Intelligence (AI) have been reviewed, and which ecological study types and AI model types (e.g., supervised, deep learning) are most frequently considered in this secondary literature?
+%\item What are the prevailing research trends, identified challenges, and future directions in existing reviews on the use of AI in ecology?
+%\ben
+%\item Are new AI methods widely adopted in ecological applications as soon as they are available, or is there a delay in adoption?
+%\item Are older methods still used, and in what areas?
+%\een
+%\item Based on a synthesis of the secondary literature, what are the most significant knowledge gaps and methodological limitations in the application of AI to solve ecological problems?
+%\item What is the reach of these studies in policy documents and in their respective fields?
+%\ben
+%\item How often are the reviews cited by others?
+%\item What are the collaboration patterns in the existing systematic reviews, systematic maps and meta-analyses on this topic?
+%\een
+%\een
 
 \section{Inclusion and exclusion criteria}
+\label{sec:criteria}
 \subsection{Population}
 Inclusion: reviews must focus on AI (or Machine Learning and Deep Learning) applications in any biological system, including organismal, or ecological levels. Studies on mixed domains are included if biological applications are a substantial focus.
 
@@ -56,70 +79,97 @@ Inclusion: The review must discuss the outcomes of applying AI, such as predicti
 Exclusion: Exclude studies focused only on the theoretical or mathematical aspects of AI algorithms without discussing their application or impact in a biological context. Exclude papers on software development that do not review the outcomes of its use.
 
 \subsection{Study type}
-Inclusion: Only secondary literature, specifically systematic reviews, systematic maps and meta-analyses that synthesize primary literature, will be included. Studies must be peer-reviewed.
+Inclusion: Only secondary literature, specifically systematic reviews and systematic maps that synthesize primary literature, will be included (meta-analyses will also be included, although such studies are not expected). Studies must be peer-reviewed.
 
 Exclusion: Exclude primary research articles, editorials, opinion pieces, book chapters, and narrative/scoping reviews.
 
 \section{Benchmark papers}
 \bei
-\item Algorithms going wild – A review of machine learning techniques for terrestrial ecology
-\item Towards the fully automated monitoring of ecological communities
-\item Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook
-\item Application of machine-learning methods in forest ecology: recent progress and future challenges
-\item Deep learning as a tool for ecology and evolution
-\item Machine learning and deep learning—A review for ecologists
-\item MACHINE LEARNING METHODS WITHOUT TEARS: A PRIMER FOR ECOLOGISTS
-\item ‘Small Data’ for big insights in ecology
-\item Machine learning in landscape ecological analysis: a review of recent approaches
-\item Artificial Intelligence in Landscape Ecology: Recent Advances, Perspectives, and Opportunities
-\item Generative AI as a tool to accelerate the field of ecology
+\item Cipriano, Cristina, Sergio Noce, Simone Mereu, and Monia Santini. "Algorithms going wild–A review of machine learning techniques for terrestrial ecology." Ecological Modelling 506 (2025): 111164.
+\item Besson, Marc, Jamie Alison, Kim Bjerge, Thomas E. Gorochowski, Toke T. Høye, Tommaso Jucker, Hjalte MR Mann, and Christopher F. Clements. "Towards the fully automated monitoring of ecological communities." Ecology letters 25, no. 12 (2022): 2753-2775.
+\item Goodwin, Morten, Kim Tallaksen Halvorsen, Lei Jiao, Kristian Muri Knausgård, Angela Helen Martin, Marta Moyano, Rebekah A. Oomen, Jeppe Have Rasmussen, Tonje Knutsen Sørdalen, and Susanna Huneide Thorbjørnsen. "Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook." ICES Journal of Marine Science 79, no. 2 (2022): 319-336.
+\item Liu, Zelin, Changhui Peng, Timothy Work, Jean-Noel Candau, Annie DesRochers, and Daniel Kneeshaw. "Application of machine-learning methods in forest ecology: recent progress and future challenges." Environmental Reviews 26, no. 4 (2018): 339-350.
+\item Pichler, Maximilian, and Florian Hartig. "Machine learning and deep learning—A review for ecologists." Methods in Ecology and Evolution 14, no. 4 (2023): 994-1016.
+\item Pichler, Maximilian, and Florian Hartig. "Machine learning and deep learning—A review for ecologists." Methods in Ecology and Evolution 14, no. 4 (2023): 994-1016.
+\item Olden, Julian D., Joshua J. Lawler, and N. LeRoy Poff. "Machine learning methods without tears: a primer for ecologists." The Quarterly review of biology 83, no. 2 (2008): 171-193.
+\item Sharma, Sandhya, Kazuhiko Sato, and Bishnu Prasad Gautam. "A methodological literature review of acoustic wildlife monitoring using artificial intelligence tools and techniques." Sustainability 15, no. 9 (2023): 7128.
+\item Stupariu, Mihai-Sorin, Samuel A. Cushman, Alin-Ionuţ Pleşoianu, Ileana Pătru-Stupariu, and Christine Fuerst. "Machine learning in landscape ecological analysis: a review of recent approaches." Landscape Ecology 37, no. 5 (2022): 1227-1250.
+\item Frazier, Amy E., and Lei Song. "Artificial intelligence in landscape ecology: recent advances, perspectives, and opportunities." Current Landscape Ecology Reports 10, no. 1 (2024): 1.
+\item Rafiq, Kasim, Sara Beery, Meredith S. Palmer, Zaid Harchaoui, and Briana Abrahms. "Generative AI as a tool to accelerate the field of ecology." Nature Ecology \& Evolution 9, no. 3 (2025): 378-385.
+\item Miller, Tymoteusz, Grzegorz Michoński, Irmina Durlik, Polina Kozlovska, and Paweł Biczak. "Artificial Intelligence in Aquatic Biodiversity Research: A PRISMA-Based Systematic Review." Biology 14, no. 5 (2025): 520.
 \eei
 
 \section{Literature searches}
 
-A systematic search was conducted to identify relevant reviews. Two databases (Web of Science and Scopus) were searched with no restrictions on publication. The full search strings are provided in the following subsection.
+A systematic search will be conducted to identify relevant reviews. Two databases (Web of Science and Scopus) will be searched with no restrictions on publication type or date using the full search strings  provided in the following subsection.
 
 \subsection{Web of Science}
 1st search string
 
-TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (Ecolog* OR (Evolution* NEAR/3 biology) NOT medic* NOT microb* NOT land*) AND (("review" NOT (review NEAR/3 human)) OR "systematic map" OR "survey" OR "recent advancements" OR insight)) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
+%TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (Ecolog* OR (Evolution* NEAR/3 biology) NOT medic* NOT microb* NOT land*) AND (("review" NOT (review NEAR/3 human)) OR "systematic map" OR "survey" OR "recent advancements" OR insight)) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
 
-Results in $1184$ articles.
+%Results in $1223$ articles.
 
-2nd search string
+%TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR “Large Language Model*” OR "ChatGPT") AND (Ecolog* OR (Evolution* NEAR/3 biology) NOT medic* NOT microb* NOT land*) AND (("review*" NOT (review* NEAR/3 human)) OR "systematic map*" OR "survey" OR "recent advancement*" OR insight OR meta-anlysis OR metareview* OR "meta epidemiolog* review" OR "critical review*" OR "scoping review*" OR "rapid review*")) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
 
-TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (review* OR "systematic map*" OR "survey*" OR "recent advancement*" OR insight*)) AND SU=("Ecology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation")
+TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR “Large Language Model*” OR "ChatGPT") AND (Ecolog* NOT medic* NOT microb* NOT land*) AND (("review*" NOT (review* NEAR/3 human)) OR "systematic map*" OR "survey" OR "recent advancement*" OR insight OR meta-anlysis OR metareview* OR "meta epidemiolog* review" OR "critical review*" OR "scoping review*" OR "rapid review*")) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
 
-Putting limitations for Web of Science Categories:
+The search string was tested on October 16th 2025. It found $1344$ articles.
 
-Include:
-\bei
-\item Remote Sensing
-\item Ecology
-\item Marine Freshwater Biology
-\item Evolutionary Biology
-\item Plant Sciences
-\item Biology
-\item Zoology
-\item Entomology
-\item Ornithology
-\item Fisheries
-\eei
-NOT include:
-\bei
-\item Environmental Sciences
-\eei
 
-Results in $992$ articles.
+%2nd search string
+
+%TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (review* OR "systematic map*" OR "survey*" OR "recent advancement*" OR insight*)) AND SU=("Ecology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation")
+
+%Putting limitations for Web of Science Categories:
+
+%Include:
+%\bei
+%\item Remote Sensing
+%\item Ecology
+%\item Marine Freshwater Biology
+%\item Evolutionary Biology
+%\item Plant Sciences
+%\item Biology
+%\item Zoology
+%\item Entomology
+%\item Ornithology
+%\item Fisheries
+%\eei
+%NOT include:
+%\bei
+%\item Environmental Sciences
+%\eei
+
+%Results in $992$ articles.
 
 \subsection{Scopus}
-SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR "Large Language Models" ) AND ( Ecolog* OR Evolution* ) AND ( "review" OR "systematic map" OR "survey" OR "recent advancements" OR insight ) )
+%SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR "Large Language Models" ) AND ( Ecolog* OR Evolution* OR biodiv* OR conservation ) AND ( "review" OR "systematic map" OR "survey" OR "recent advancements" OR insight* ) )
 
-Results in $1354$ articles.
+SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR "Large Language Models" ) AND ( Ecolog* OR biodiv* OR conservation ) AND ( "review" OR "systematic map" OR "survey" OR "recent advancements" OR insight* ) )
 
-\section{Code book}
+The search string was tested on October 16th 2025. It found $1873$ articles.
+
+\section{Screening}
+
+Article selection will be conducted for all pooled bibliographic records from the two databases searched (Web of Science and Scopus), after duplicate entries are removed and transferred to SysRev. The screening will be carried out in two phases. First, we will screen based on Title, Abstract, and Keywords following our inclusion and exclusion criteria defined in Section \ref{sec:criteria}. Following this, we will collect the full texts of the selected articles and perform a second selection based on the full texts, using the same criteria as in the first screening. This will result in the papers on which we will perform data extraction.
+
+To minimize biased selection in the screening process, an independent dual screening process will be implemented in both screening phases. Discrepancies will be resolved through discussion or, if necessary, adjudicated by a third independent reviewer. The main points of disagreement will be documented.
+
+\subsection{Pilot of literature screening}
+
+We conducted a two-person pilot of the screening and data extraction procedures to evaluate the inclusion and exclusion criteria and the availability of the data to be extracted. We selected a random sample of $100$ articles from the Web of Science search results. We first screened this sample based on the titles and abstracts of the papers, resulting in 6 provisionally included articles. For the provisionally included papers from the first screening, we did a second screening round based on the full text, from which we included two. Based on these results, we expect around $40$ systematic reviews and systematic maps to be included in our review of reviews.
+
+\section{Data extraction}
+
+After the screening process, we will extract data from the included full-text reviews. Data extraction will be conducted using a pilot-tested form. One researcher will extract the data, and a random sample (at least $10\%$) will be independently verified by a second researcher. In the following subsections, we present the data to be extracted for each of our objectives.
+
+\subsection{Systematic mapping}
+Table \ref{tab:systMap} shows the data we will extract to accomplish our first objective.
+
 %\begin{table}[h]
     \begin{longtable}{p{1.5cm}p{3cm}p{3cm}p{3cm}}
+    \caption{Data for Systematic mapping}\\
 %    \centering
         \hline
          \textbf{Variable} & \textbf{Description} & \textbf{Format/Allowed values} & \textbf{Notes}\\
@@ -129,16 +179,15 @@ Results in $1354$ articles.
         doi & Digital Object Identifier of the review & Text (e.g., 10.1111/2041-210X.14096) & Extract from journal metadata\\
         year & Year of publication & YYYY & Extract from journal metadata\\
         review type & The main type of secondary review & Systematic review, Systematic map, Meta-analysis, Narrative review, Scoping review & Assign one value based on what the authors explicitly state\\
-        primary study design & The main type of study design of primary studies included in the review & Experimental, Observational, Simulation, Mixed, Unclear & Use "Mixed" if multiple apply. Use "Unclear" if not explicitly stated\\
-        mentions n studies & Does the review report the number of studies it looked at? & Yes, No & Must be explicitly reported. If yes record n\_studies, if no leave n\_studies empty\\
-        n studies & The number of primary studies synthesized in the review & Integer & Must be explicitly reported. Refers to the number of publications, not experiments or effect sizes\\
-        biology domain & The primary biological domain(s) of focus & Ecology, Bioinformatics, Medicine, Systems Biology, Mixed, Other, Unclear & Multiple categories are allowed. "Mixed" for reviews covering many domains\\
+        mentions n articles & Does the review report the number of articles it processed? & Yes, No & Must be explicitly reported. If yes record n\_studies, if no leave n\_studies empty\\
+        n articles & The number of articles synthesized in the review & Integer & Must be explicitly reported. Refers to the number of publications, not experiments or effect sizes\\
+        biology domain & The primary biological domain(s) of focus & Ecology, Bioinformatics, Systems Biology, Mixed, Other, Unclear & Multiple categories are allowed. "Mixed" for reviews covering many domains\\
         data source type & The source of data used in the primary studies reviewed & Field-collected, Lab-generated, Public repository, Mixed, Unclear & Refers to the origin of the data that ML models are trained on\\
         ai model category & Broad category of AI models discussed & Supervised, Unsupervised, Reinforcement, Mixed & Multiple categories are allowed\\
         specific algorithms & Does the review focus on a specific, named algorithm or architecture? & Yes, No, Unclear & Yes for a focus like "Random Forest" or "Convolutional Neural Networks."\\
         specific algorithms comment & If yes, what specific algorithms or architectures are mentioned? & Free text & List the exact terms used by the authors (e.g., SVM, GAN, AlphaFold)\\
         ai algorithms & What specific AI algorithms are reviewed & CNN, RNN, LLM, Decision trees, boosted regression trees, random forest, SVM & Multiple categories, only some examples are included since more classifications may be acceptable\\
-        ai algorithms comments & Any observations about the Ai algorithms listed in the review & Free text & \\
+        ai algorithms comments & Any observations about the AI algorithms listed in the review & Free text & \\
         compared to stats & Does the review explicitly compare AI models to traditional statistical methods? & Yes, No, Unclear & Yes if there is a direct comparison to methods like linear/logistic regression\\
         application goal & The broad category of the task or goal the ML models are used for & Classification, Prediction/Regression, Clustering, Dimensionality Reduction, Generation, Other, Mixed & Multiple categories are allowed. This describes what the model is doing\\
         application goal comment & A specific description of the application goals & Free text & Provide more detail, e.g., "Classifying species from images," "Predicting protein structure."\\
@@ -151,12 +200,40 @@ Results in $1354$ articles.
         identified gaps comment & If yes, what research gaps are mentioned? & Free text & List the exact gaps identified (e.g., Need for more interpretable models, Lack of causal inference methods)\\
         general notes & Any other relevant comments or observations & Free text & Use for important context not captured elsewhere (e.g., "Main focus was on deep learning, but briefly mentioned classical ML")\\
          \hline
+    \label{tab:systMap}
     \end{longtable}
-    %\label{tab:satMapsvscoordinates}
 %\end{table}
 
-\section{Bibliometric data}
+\subsection{Critical appraisal}
+
+To accomplish our second objective, we will use a modified version of the RepOrting standards for Systematic Evidence Syntheses (ROSES) for Systematic Map Reports \cite{haddaway2017rosesMap} and for Systematic Review Reports \cite{haddaway2017rosesReview}. We reviewed the checklists for each ROSES report and selected the assessment items relevant to our study. Table \ref{tab:ROSES} shows the subset that comprises our checklist; it specifies from which an item is derived.  Note, each element in our checklist is a yes or no question.
+
+\begin{longtable}{p{2cm}p{5.5cm}p{1.5cm}p{1.5cm}}
+\caption{Data to be extracted as Critical appraisal of included reviews.}\\
+%    \centering
+        \hline
+         \textbf{Topic} & \textbf{Description} & \textbf{ROSES format origin} & \textbf{Format/Allowed values}\\
+         \hline
+         Protocol & Provided citation, DOI or open-access to published protocol & Both & Yes, No \\
+         Search string & Provided Boolean-style full search string and state the platform for which the string is formatted (e.g. Web of Science format) & Both & Yes, No, Unclear \\
+         Languages - bibliographics databases & Provided a list of languages used in bibliographic database searches & Both & Yes, No \\
+         Estimating comprehensiveness of the search & Described the process by which the comprehensiveness of the search strategy was assessed (i.e. list of benchmark articles) & Both & Yes, No \\
+         Screening strategy & Described the methodology for screening articles/studies for relevance. Methods for consistency of screening decisions (at title, abstract, and full texts levels) checking must be described & Both & Yes, No, Unclear\\
+         Description of review process & Described the review process, including the volume of evidence identified from all sources and retained through each stage of the review. Must also display the number of articles/studies included at all stages of the review in a flow diagram, including the number of articles/studies excluded at each stage & Both & Yes, No\\
+         Full text screening results & Provided the number of articles retained following full text screening & Both & \\
+         Extracted data & Additional file containing extracted quantitative or qualitative data (study findings) from included studies & Review Reports & Yes, No\\
+         Systematic map database & Additional file containing meta-data and coding for included studies & Both & Yes, No\\
+         Knowledge gaps and clusters & Described knowledge gaps (unrepresented or underrepresented subtopics that warrant further primary research) and knowledge clusters (well-represented subtopics that are amenable to full synthesis via systematic review) & Map Reports & Yes, No, Unclear\\
+         Competing interests & Described of any financial or non-financial competing interests that the review authors may have & Both & Yes, No\\
+\label{tab:ROSES}
+\end{longtable}
+
+
+\subsection{Bibliometric analysis}
+
+For papers found with both the Web of Science and Scopus search strings, or only with the Web of Science search string, bibliometric information for the first and corresponding authors' institutions and countries will be obtained using the Web of Science tools, based on each paper's DOI. For papers available only in the Scopus database, the information will be extracted manually from each paper. 
 \begin{longtable}{p{1.5cm}p{3cm}p{3cm}p{3cm}}
+\caption{Data for Bibliometric analysis}\\
 %    \centering
         \hline
          \textbf{Variable} & \textbf{Description} & \textbf{Format/Allowed values} & \textbf{Notes}\\
@@ -164,26 +241,17 @@ Results in $1354$ articles.
          doi & Digital Object Identifier of the review & Text (e.g., 10.1111/2041-210X.14096) & Extract from journal metadata\\
          authors & Full list of authors & Free text & \\
          affiliation & Institutional and country affiliations & Free text & \\
-         corr country affiliation & Country of first or corresponding author & Country name & \\
+         corr country affiliation & Country of corresponding author & Country name & \\
+         first country affiliation & Country of first author & Country name & Might be the same author as the corresponding author \\
          n authors & Number of authors & Integer & \\
          citations scopus & Citation counts from Scopus & Integer & \\
          citations web of science & Citation counts from Web of Science & Integer & \\
-         policy citations & Policy citation counts & Integer & \\
-
+\label{tab:critApp}
 \end{longtable}
 
-For papers found with both the Web of Science and Scopus search strings or only with the Web of Science search string, the bibliometric information related to the author's institution and country will be obtained using the tools from the Web of Science search engine using the DOI of each paper. For papers found only in the Scopus search string, the information will be extracted from each paper individually. 
+\subsection{Data extraction pilot}
+We conducted a data-extraction pilot on the papers that made it through the screening process. We evaluated whether the desired data points can be extracted from the papers and adjusted accordingly. We also estimated the time for data extraction for each type of review as the average time it took to do the extraction on the papers that are in our benchmark. The average was $14.5$ minutes. We expected to perform data extraction on 60 reviews, so we estimated it would take $870$ minutes.
 
-The data obtained from the codebook will give us the information necessary to answer questions 1,  2 and 3. The bibliometric data will allow us to answer question 4.
-
-\section{Time estimations}
-
-We estimate the time for data extraction for each type of review as the average time it took to do the extraction on the papers that are in our benchmark. The average is $14.5$ minutes. We expect to perform data extraction on 60 reviews, so data extraction is estimated to take $870$ minutes.
-
-\section{Pilot}
-
-We will conduct a two person pilot of the screening and data extraction procedures to evaluate the inclusion, exclusion criteria, and availability of the desired data to be extracted. For the screening, we will do two levels. First, we will screen based on the title and abstract of the papers. For the papers that make it through the first screening, we will do a second screening based on the full text. After each screening, we will evaluate the results of the two individuals and adjust the criteria if necessary. 
-
-We will then perform data extraction of the papers that made it through the screening process. We will evaluate whether the desired data points can be extracted from the papers and adjust accordingly.
-
+\bibliographystyle{plain}
+\bibliography{refs}
 \end{document}
