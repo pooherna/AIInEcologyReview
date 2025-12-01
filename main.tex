@@ -14,7 +14,7 @@
 \author[1]{Sergio Poo Hernandez \thanks{Corresponding author}}
 \author[1]{Santiago Ortega}
 \author[1]{Ayumi Mizuno}
-\author[1]{Eduardo Santos}
+\author[1]{Eduardo S.A. Santos}
 \author[3]{Sarah Young}
 \author[1,2]{Malgorzata Lagisz}
 \author[1,2]{Shinichi Nakagawa}
@@ -23,81 +23,92 @@
 \affil[2]{Evolution \& Ecology Research Centre, School of Biological, Earth and Environmental Sciences, University of New South Wales, Sydney, NSW, Australia}
 \affil[3]{Carnegie Mellon University Libraries, Carnegie Mellon University, Pittsburgh, Pennsylvania, USA}
 
-\date{November 4th, 2025}
+\date{December 1st, 2025}
 
 \begin{document}
 
 \maketitle
 
+\section{Version}
+\begin{longtable}{p{3cm}|p{4.5cm}|p{3cm}}
+    \caption{Version history}\\
+%    \centering
+        \hline
+         \textbf{Version number} & \textbf{Changes} & \textbf{Date}\\
+         \hline
+        1.0 & Initial version & December 1st 2025 \\
+         %\hline
+    \end{longtable}
+
 \section{Background}
 
-A primary application of Artificial Intelligence (AI) methods is the automation of tasks. When a novel AI method is developed, it is evaluated across different tasks to determine which can be automated. This practice also applies to the field of Ecology, where AI methods are increasingly employed to support data collection (\citep{besson2022towards}), data analysis, and model development (\citep{olden2008machine}), among other applications. As the popularity and accessibility of AI continue to grow, the volume of scientific research (primary literature) examining its use in ecology has also expanded. 
+A primary application of Artificial Intelligence (AI) methods is the automation of complex or repetitive tasks. This application is particularly valuable in ecology, which often faces the daunting challenge of collecting and analyzing massive datasets. For example, manually monitoring wildlife behavior from thousands of hours of video footage or classifying species from vast acoustic records is often intractable. Consequently, AI methods are increasingly employed to automate these tasks, supporting data collection (\citep{besson2022towards}), data analysis, and model development (\citep{olden2008machine}). As AI's popularity and accessibility grow, the volume of scientific research (primary literature) examining its use in ecology has also expanded. 
+%the problem
 
-To synthesize and interpret this expanding body of primary literature, researchers have produced reviews (secondary literature) that summarize findings and describe the current state of AI applications. Among the various approaches to creating secondary literature, systematic reviews (including meta-analyses) and systematic maps offer the most unbiased overview of the field when conducted rigorously. However, the rapid growth of secondary literature  presents a challenge for researchers seeking to stay up to date on the topic. Also, given the field's breadth, a researcher interested in an overall summary of the subject would need to review several reviews. 
+To synthesize and interpret this expanding primary literature, researchers rely on reviews (secondary literature). Rigorous approaches like systematic reviews \citep{gough2012introduction,haddaway2015making} and systematic maps \citep{james2016methodology} aim to provide the most unbiased overview. However, this very solution has created a new research bottleneck. The sheer volume of the secondary literature is now expanding, making it difficult for researchers to gain a comprehensive, up-to-date understanding of the entire topic. Without a "review of reviews", important findings and research gaps become fragmented across dozens of papers, potentially obscuring the critical next steps for the field.  
+%the solution
 
-These issues can be addressed by a systematic map of reviews, which provides an overarching synthesis of the evidence collected by systematic reviews and maps (\cite{biondi2016umbrella}). As with systematic reviews, this approach includes a critical appraisal of the included reviews to evaluate their reporting or methodological rigor and identify potential sources of bias. Such appraisal is essential to avoid providing a distorted, misinformed view of the field.
+A systematic map of reviews addresses this challenge directly by providing an overarching synthesis of the evidence from existing systematic reviews and maps \citep{biondi2016umbrella}. Similar to systematic reviews, these "maps of reviews"  include a critical appraisal of the source reviews. This appraisal evaluates the reporting or methodological rigor of the included reviews to identify potential sources of bias, which is essential to avoid providing a distorted or misinformed view of the field.
 
-The present systematic map of reviews aims to synthesise existing evidence on the applications of AI in Ecology, offering an overarching perspective on current trends, methodological approaches, and research gaps.
+The present systematic map of reviews aims to synthesize the evidence on the applications of AI in Ecology, offering an overarching perspective that identifies current trends, methodological approaches, and research gaps.
 
 %One of the main purposes of Artificial Intelligence (AI) methods has been to automate tasks. When a new AI method is developed, users test it on different tasks to determine what can now be automated. Reviews on the application of AI in Ecology offer a summary of how these methods are used across the field and, as such, are often used by researchers to understand the overall state of AI use in Ecology. However, with the increase in the volume of scientific research (primary literature), there has also been an increase in the number of reviews (secondary literature). Such an increase presents a challenge in staying up to date on the topic. Also, given the field's breadth, a researcher interested in an overall summary of the subject would need to review several reviews. These issues can be solved by a review of reviews, which provides an overarching view of the evidence collected by reviews \cite{biondi2016umbrella}. As with systematic reviews, a review of reviews includes a critical appraisal of the included reviews. The critical appraisal is important to identify any variability in the methodologies used in the included reviews, because disregarding these differences risks providing a distorted, misinformed view of the field.
 
 %In this review of reviews, our aim is to understand trends in the use of AI methods in Ecology by reviewing systematic maps and reviews.
 
 \section{Objectives}
-In this study, we collate and assess systematic reviews and systematic maps on the use of AI methods in the field of Ecology. Our approach combines systematic mapping with appraisal and bibliometric analysis. 
+To achieve our aim,  our approach combines a systematic map of the literature with critical appraisal and a bibliometric analysis. This study has three main objectives:
 
-
-We have three main objectives:
 \ben
-\item Reveal trends in the coverage of the systematic reviews and maps focused on the AI methods used in the broadly-defined field of Ecology, and identify existing knowledge gaps and potential biases. 
-\item Perform a critical appraisal of the included systematic reviews and maps to assess their reporting quality and identify their strengths and shortcomings. 
-\item Quantify the reach and impact of the systematic reviews and maps in the field through bibliometric analyzes, including locations of origin (e.g., affiliations, countries), collaboration patterns, and citations.
+\item Map the coverage of the included systematic reviews and maps to identify trends, knowledge gaps, and potential biases in the application of AI methods within the broadly-defined field of Ecology.
+\item Perform a critical appraisal of the included systematic reviews and maps to assess their reporting quality and identify methodological strengths and shortcomings. 
+\item Quantify the reach and impact of this body of literature through bibliometric analyses, detailing locations of origin (e.g., affiliations, countries), collaboration patterns, and citation networks.
 \een
 
 \section{Inclusion and exclusion criteria}
+We defined the inclusion and exclusion criteria using the Population, Exposure, Comparator, Outcome, Study type (PECOS) framework.
 \label{sec:criteria}
 \subsection{Population}
-Inclusion: reviews must focus on AI (or Machine Learning and Deep Learning) applications in any biological system, including organismal, or ecological levels. Studies on mixed domains are included if biological applications are a substantial focus.
+Inclusion: Systematic reviews must focus on AI (or Machine Learning and Deep Learning) applications within evolutionary ecology and biological systems, including organismal and ecological levels. AI, ML and DL applications are those that are able to learn from and make decisions or predictions based on data. Reviews covering other domains (e.g., land coverage, pollution, climate change) will be included if their focus on biological applications is substantial.
 
-Exclusion: Exclude reviews where the analytical focus is exclusively on non-biological systems (e.g., finance, engineering, computer vision without a biological application) or on humans for purely clinical/biomedical purposes, or application in biological systems on the molecular or cellular levels.
+Exclusion: Systematic reviews will be excluded if their analytical focus is exclusively on non-biological systems (e.g., finance, engineering, computer vision without a biological application) or on humans for purely clinical/biomedical purposes, or on biological systems but at the molecular or cellular levels.
 
 \subsection{Exposure}
-Inclusion: Reviews must explicitly analyze Machine Learning (ML), Deep Learning (DL), or Artificial Intelligence (AI) as a distinct set of tools. This includes supervised, unsupervised, and reinforcement learning methods.
+Inclusion: Systematic reviews must explicitly synthesize or evaluate Machine Learning (ML), Deep Learning (DL), or Artificial Intelligence (AI) as a distinct set of tools and how they are used in the field of biology. This includes supervised, unsupervised, and reinforcement learning methods.
 
-Exclusion: Exclude reviews focusing solely on traditional statistical methods (e.g., linear regression, ANOVA) without framing them in the context of AI. Exclude reviews where AI is not a central theme or cannot be distinguished from other computational methods. Exclude reviews focusing only on data collection for remote sensing.
+Exclusion: Systematic reviews will be excluded if they focus solely on traditional statistical methods (e.g., linear regression, ANOVA) that are not framed within the context of AI; those that do not have AI as a central theme, or if AI methods cannot be distinguished from other computational methods; reviews focus solely on remote sensing as data collection technique, without a central focus on the AI methods used to process or analyze that data.
 
 \subsection{Comparator}
 Not applicable
 
 \subsection{Outcome}
-Inclusion: The review must discuss the outcomes of applying AI, such as prediction, classification, clustering, or generation of biological data. This includes outcomes such as modeling ecological systems or classifying species from images.
+Inclusion: The systematic review must discuss the outcomes of applying AI, including prediction, classification, clustering, or the generation of biological data. This includes outcomes such as modeling ecological systems or classifying species from images.
 
-Exclusion: Exclude studies focused only on the theoretical or mathematical aspects of AI algorithms without discussing their application or impact in a biological context. Exclude papers on software development that do not review the outcomes of its use.
+Exclusion: Systematic reviews that focus solely on the theoretical or mathematical aspects of AI algorithms, without discussing their application or impact in a biological context; or are primarily software development papers that do not review the outcomes of the software's application.
 
 \subsection{Study type}
-Inclusion: Only systematic reviews and systematic maps that synthesize primary literature, will be included (meta-analyses will also be included, although such studies are not expected). Studies must be peer-reviewed.
+Inclusion: Only peer-reviewed systematic reviews and systematic maps that synthesize primary literature will be included. Meta-analyses will be included, although such studies are not expected. Included studies must be in English or Spanish.
 
-Exclusion: Exclude primary research articles, editorials, opinion pieces, book chapters, and narrative/scoping reviews.
+Exclusion: Primary research articles, editorials, opinion pieces, book chapters, and narrative/scoping reviews will be excluded. Critically, this exclusion also applies to articles that self-described as meta-analyses or systematic reviews but do not present t a structured, reproducible synthesis of empirical (including observational) findings.
 
 \section{Benchmark papers}
+The following benchmark papers were used to test and calibrate the screening and data-extraction processes.
 \bei
 \item Cipriano, Cristina, Sergio Noce, Simone Mereu, and Monia Santini. "Algorithms going wild–A review of machine learning techniques for terrestrial ecology." Ecological Modelling 506 (2025): 111164.
-\item Besson, Marc, Jamie Alison, Kim Bjerge, Thomas E. Gorochowski, Toke T. Høye, Tommaso Jucker, Hjalte MR Mann, and Christopher F. Clements. "Towards the fully automated monitoring of ecological communities." Ecology letters 25, no. 12 (2022): 2753-2775.
-\item Goodwin, Morten, Kim Tallaksen Halvorsen, Lei Jiao, Kristian Muri Knausgård, Angela Helen Martin, Marta Moyano, Rebekah A. Oomen, Jeppe Have Rasmussen, Tonje Knutsen Sørdalen, and Susanna Huneide Thorbjørnsen. "Unlocking the potential of deep learning for marine ecology: overview, applications, and outlook." ICES Journal of Marine Science 79, no. 2 (2022): 319-336.
-\item Liu, Zelin, Changhui Peng, Timothy Work, Jean-Noel Candau, Annie DesRochers, and Daniel Kneeshaw. "Application of machine-learning methods in forest ecology: recent progress and future challenges." Environmental Reviews 26, no. 4 (2018): 339-350.
 \item Pichler, Maximilian, and Florian Hartig. "Machine learning and deep learning—A review for ecologists." Methods in Ecology and Evolution 14, no. 4 (2023): 994-1016.
-\item Pichler, Maximilian, and Florian Hartig. "Machine learning and deep learning—A review for ecologists." Methods in Ecology and Evolution 14, no. 4 (2023): 994-1016.
-\item Olden, Julian D., Joshua J. Lawler, and N. LeRoy Poff. "Machine learning methods without tears: a primer for ecologists." The Quarterly review of biology 83, no. 2 (2008): 171-193.
 \item Sharma, Sandhya, Kazuhiko Sato, and Bishnu Prasad Gautam. "A methodological literature review of acoustic wildlife monitoring using artificial intelligence tools and techniques." Sustainability 15, no. 9 (2023): 7128.
 \item Stupariu, Mihai-Sorin, Samuel A. Cushman, Alin-Ionuţ Pleşoianu, Ileana Pătru-Stupariu, and Christine Fuerst. "Machine learning in landscape ecological analysis: a review of recent approaches." Landscape Ecology 37, no. 5 (2022): 1227-1250.
-\item Frazier, Amy E., and Lei Song. "Artificial intelligence in landscape ecology: recent advances, perspectives, and opportunities." Current Landscape Ecology Reports 10, no. 1 (2024): 1.
 \item Rafiq, Kasim, Sara Beery, Meredith S. Palmer, Zaid Harchaoui, and Briana Abrahms. "Generative AI as a tool to accelerate the field of ecology." Nature Ecology \& Evolution 9, no. 3 (2025): 378-385.
 \item Miller, Tymoteusz, Grzegorz Michoński, Irmina Durlik, Polina Kozlovska, and Paweł Biczak. "Artificial Intelligence in Aquatic Biodiversity Research: A PRISMA-Based Systematic Review." Biology 14, no. 5 (2025): 520.
+\item Borowiec, Marek L., Rebecca B. Dikow, Paul B. Frandsen, Alexander McKeeken, Gabriele Valentini, and Alexander E. White. "Deep learning as a tool for ecology and evolution." Methods in Ecology and Evolution 13, no. 8 (2022): 1640-1660.
+\item Hussein, Burhan Rashid, Owais Ahmed Malik, Wee-Hong Ong, and Johan Willem Frederik Slik. "Applications of computer vision and machine learning techniques for digitized herbarium specimens: A systematic literature review." Ecological Informatics 69 (2022): 101641.
+\item Akram, Waseem, Muhayy Ud Din, Lyes Saad Saoud, and Irfan Hussain. "A review of generative AI in aquaculture: Applications, case studies and challenges for smart and sustainable farming." Aquacultural Engineering (2025): 102637.
+\item Wilson, Oakleigh, David Schoeman, Andrew Bradley, and Christofer Clemente. "Practical guidelines for validation of supervised machine learning models in accelerometer‐based animal behaviour classification." Journal of Animal Ecology (2025).
 \eei
 
 \section{Literature searches}
 
-We will conduct a systematic search of academic literature to identify relevant reviews. Specifically, we will search two databases (Web of Science and Scopus) with no restrictions on publication type or date using the full search strings provided in the following subsection.
+We will conduct a systematic search of academic literature to identify relevant reviews. Specifically, we will search two databases --Web of Science Core Collection (hereafter referred to as Web of Science) and Scopus-- with no restrictions on publication type or date using the full search strings provided in the following subsection.
 
 \subsection{Web of Science Core Collection}
 
@@ -107,48 +118,23 @@ We will conduct a systematic search of academic literature to identify relevant 
 
 %TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR “Large Language Model*” OR "ChatGPT") AND (Ecolog* OR (Evolution* NEAR/3 biology) NOT medic* NOT microb* NOT land*) AND (("review*" NOT (review* NEAR/3 human)) OR "systematic map*" OR "survey" OR "recent advancement*" OR insight OR meta-anlysis OR metareview* OR "meta epidemiolog* review" OR "critical review*" OR "scoping review*" OR "rapid review*")) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
 
-TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR “Large Language Model*” OR "ChatGPT") AND (Ecolog* NOT medic* NOT microb* NOT land*) AND (("review*" NOT (review* NEAR/3 human)) OR "systematic map*" OR "survey" OR "recent advancement*" OR insight OR meta-anlysis OR metareview* OR "meta epidemiolog* review" OR "critical review*" OR "scoping review*" OR "rapid review*")) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
+%TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR “Large Language Model*” OR "ChatGPT") AND (Ecolog* NOT medic* NOT microb* NOT land*) AND (("review*" NOT (review* NEAR/3 human)) OR "systematic map*" OR "survey" OR "recent advancement*" OR insight OR meta-anlysis OR metareview* OR "meta epidemiolog* review" OR "critical review*" OR "scoping review*" OR "rapid review*")) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
 
-The search string was tested on October 16th 2025. It found $1344$ articles.
+TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR “Large Language Model*” OR "ChatGPT" OR "machine reasoning" OR "natural language processing" OR "NLP" OR "LLM*" OR "AI/ML" OR "GPT*" OR "machine model*" OR "supervised learning" OR "unsupervised learning" OR "vector machine" OR "classifier*" OR "support vector" OR "topic model*" OR "computer vision") AND (Ecolog* OR (Evolution* NEAR/3 biology) NOT medic* NOT microb* NOT land*) AND (("review*" NOT (review* NEAR/3 human)) OR "systematic map*" OR "survey" OR "recent advancement*" OR insight OR meta-analysis OR metareview* OR "meta epidemiolog* review" OR "critical review*" OR "scoping review*" OR "rapid review*") ) AND SU=("Ecology" OR "Biology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation" OR "Life Sciences" NOT "Microbiology" NOT "Physical Sciences")
 
-
-%2nd search string
-
-%TS=(("Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR “Large Language Models”) AND (review* OR "systematic map*" OR "survey*" OR "recent advancement*" OR insight*)) AND SU=("Ecology" OR " Evolutionary biology" OR "Biodiversity" OR "Conservation")
-
-%Putting limitations for Web of Science Categories:
-
-%Include:
-%\bei
-%\item Remote Sensing
-%\item Ecology
-%\item Marine Freshwater Biology
-%\item Evolutionary Biology
-%\item Plant Sciences
-%\item Biology
-%\item Zoology
-%\item Entomology
-%\item Ornithology
-%\item Fisheries
-%\eei
-%NOT include:
-%\bei
-%\item Environmental Sciences
-%\eei
-
-%Results in $992$ articles.
+The search string was tested on November 28th 2025. It found $1618$ articles.
 
 \subsection{Scopus}
-%SUBJAREA ( AGRI ) TITLE-ABS ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR "Large Language Models" ) AND ( Ecolog* OR Evolution* OR biodiv* OR conservation ) AND ( "review" OR "systematic map" OR "survey" OR "recent advancements" OR insight* ) )
 
-SUBJAREA ( AGRI ) TITLE-ABS-KEY ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network" OR "Reinforcement learning" OR "Large Language Models" ) AND ( Ecolog* OR biodiv* OR conservation ) AND ( "review" OR "systematic map" OR "survey" OR "recent advancements" OR insight* ) )
+SUBJAREA ( AGRI OR ENVI ) TITLE-ABS-KEY ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR "Large Language Model*" OR "ChatGPT" OR "machine reasoning" OR "natural language processing" OR "NLP" OR "LLM*" OR "AI/ML" OR "GPT*" OR "machine model*" OR "supervised learning" OR "unsupervised learning" OR "vector machine" OR "classifier*" OR "support vector" OR "topic model*" OR "computer vision" ) AND ( Ecolog* OR (evolution* W/3 biology) OR biodiv* OR conservation) AND ("review" OR "systematic map" OR "systematic surv*" OR "literature surv*" OR "recent advancements" OR insight* OR meta-analysis OR metareview* OR "meta epidemiolog*" OR "meta-epidemiolog*" OR "critical review*" OR "scoping review*" OR "rapid review*") ) AND ( EXCLUDE ( SUBJAREA,"SOCI" ) OR EXCLUDE ( SUBJAREA,"ENGI" ) OR EXCLUDE ( SUBJAREA,"BIOC" ) )
 
-%The search string was tested on October 16th 2025. It found $1873$ articles.
-The search string was tested on November 5th 2025. It found $2574$ articles.
+%SUBJAREA ( AGRI ) TITLE-ABS-KEY ( ( "Artificial intelligence" OR "Machine learning" OR "Deep learning" OR "neural network*" OR "Reinforcement learning" OR "Large Language Model*" OR "ChatGPT" OR "machine reasoning" OR "natural language processing" OR "NLP" OR "LLM*" OR "AI/ML" OR "GPT*" OR "machine model*" OR "supervised learning" OR "unsupervised learning" OR "vector machine" OR "classifier*" OR "support vector" OR "topic model*" OR "computer vision" ) AND ( Ecolog* OR evolution* OR biodiv* OR conservation) AND ( "review" OR "systematic map" OR "systematic surv*" OR "literature surv*" OR "recent advancements" OR insight* OR meta-anlysis OR metareview* OR "meta epidemiolog*" OR "meta-epidemiolog*" OR "critical review*" OR "scoping review*" OR "rapid review*") )
+
+The search string was tested on November 28th 2025. It found $2257$ articles.
 
 \section{Screening}
 
-We will conduct article selection for all pooled bibliographic records from the two databases searched (Web of Science and Scopus), after removing any duplicate records. We will use SysRev (https://www.sysrev.com/) for carrying out the screening in two phases. First, we will screen records based on Title, Abstract, and Keywords following a decision tree (Figure \ref{fig:titleTree}) representing our inclusion and exclusion criteria defined in Section \ref{sec:criteria}. Following this, we will collect the full texts of the provisionally included articles and perform a second round of screening based on the full texts, following a decision tree (Figure \ref{fig:fullTree}). This second round of screening will result in the list of included papers for data extraction.
+All bibliographic records from Web of Science and Scopus will be pooled and deduplicated. The subsequent screening process will be conducted in two phases using SysRev (https://www.sysrev.com/). First, all unique records will be screened based on their Title, Abstract, and Keywords. This initial screening will follow a decision tree (Figure \ref{fig:titleTree}) derived from our inclusion and exclusion criteria (Section \ref{sec:criteria}). We will retrieve the full texts for all articles provisionally included from Phase 1. These full texts will then undergo a second round of screening, using a dedicated decision tree (Figure \ref{fig:fullTree}). This final screening will determine the definitive list of included papers for data extraction.
 
 \begin{figure}
     \centering
@@ -159,29 +145,29 @@ We will conduct article selection for all pooled bibliographic records from the 
 
 \begin{figure}
     \centering
-    \makebox[\textwidth][c]{\includegraphics[width=\linewidth]{_figs/fullTextTree.png}}
+    \makebox[\textwidth][c]{\includegraphics[width=0.95\linewidth]{_figs/fullTextTree.png}}
     \caption{Decision tree that will be used for the Full-text screening phase.}
     \label{fig:fullTree}
 \end{figure}
 
-To minimize errors and biases in the screening process, we will implement an independent dual screening process for both screening phases. We will resolve discrepancies through discussion or, if necessary, adjudicated by a third independent reviewer. We will document the main points of disagreement and record resaons for exclusions at the full-text screening phase.
+We will implement an independent dual-screening process, at least two reviewers will independently assess each article, for both screening phases to minimize errors and biases in the screening process. The dual screening process We will resolve discrepancies through discussion or, if necessary, be adjudicated by a third independent reviewer. We will document the main points of disagreement and record reasons for exclusions at the full-text screening phase.
 
 \subsection{Pilot of literature screening}
 
-We conducted a two-person pilot of the screening and data extraction procedures to evaluate the inclusion and exclusion criteria and the availability of the data to be extracted. We selected a random sample of $100$ articles from the Web of Science search results. We first screened this sample based on the titles and abstracts of the papers, resulting in 6 provisionally included articles. For the provisionally included papers from the first screening, we did a second screening round based on the full text, from which we included two. Based on these results, we expect around $60$ systematic reviews and systematic maps to be included in our map of reviews.
+We conducted a two-person pilot of the screening (Sergio Poo Hernandez and Eduardo S.A. Santos)  procedure to evaluate the inclusion and exclusion criteria. We selected a random sample of $100$ articles from the Web of Science search results. We first screened this sample based on the titles and abstracts of the papers, resulting in six ($6$) provisionally included articles. For the provisionally included papers from the first screening, we conducted a second screening round based on the full text, from which we included two ($2$). Based on these results, we expect around $60$ systematic reviews and systematic maps to be included in our map of reviews.
 
 \section{Data extraction}
 
-After the screening process, we will extract data from the included full-text reviews. One researcher will extract the data from all included full-text reviews, and a random sample (at least $10\%$) will be independently verified by a second researcher. In the following subsections, we present the data to be extracted for each of our objectives.
-
-After extracting all variables, we will summarize and visualize the data in Python, producing figures that match the structure of each variable (e.g., box plots, network diagrams, and treemaps). For bibliometric analysis, we will use VOSviewer (\cite{van2010software}) to identify collaboration networks and citation patterns.
+After the screening process, we will extract data from the included full-text reviews. One researcher will extract the data from all included full-text reviews, and a random sample (at least $10\%$) will be independently verified by a second researcher. In the following subsections, we present the data to be extracted for each objective.
 
 %Following the screening process, data will be extracted from all included full-text reviews. One researcher will extract data from each review, and a random sample of at least $10\%$ will be independently verified by a second researcher to ensure consistency and accuracy. The following subsections describe the specific data to be extracted for each of the three objectives.
 
 \subsection{Systematic mapping}
-Table \ref{tab:systMap} shows the data we will extract to accomplish our first objective.
+We will extract information on systematic mapping to accomplish our first objective (reveal trends in the coverage of systematic reviews and maps) (Table \ref{tab:systMap}). We will extract data through a combination of automatic and manual processes. For the automatic data extraction we will use the auto-label utility fo Sysrev. For the manual data extraction we will use a Google Form which will result in a spreadsheet containing all data.
 
-We conducted a data-extraction pilot on our benchmark papers. We evaluated the feasibility of extracting the desired data points and made adjustments as necessary. We also estimated the time required for data extraction, which averaged $14.5$ minutes per review. Given an estimated total of $60$ reviews, we estimate that the full data extraction for systematic mapping will take approximately $870$ minutes.
+%Table \ref{tab:systMap} shows the data we will extract to accomplish our first objective. The data will be extracted using a Google Form which will result in a spreadsheet containing all data.
+
+We conducted a data-extraction pilot on $8$ of our benchmark papers. The pilot was conducted by a single person. The extracted data was recorded in a spreadsheet in which each column was the Topic of each data type in Table \ref{tab:systMap}, and each row represents each document. We evaluated the feasibility of extracting the desired information and made necessary adjustments. We also estimated the time required for data extraction, which averaged $28.5$ minutes per review. Given an estimated total of $60$ reviews, we estimate that the full data extraction for systematic mapping will take approximately $1710$ minutes ($28.5$ hours).
 
 %\begin{table}[h]
     \begin{longtable}{p{1.5cm}|p{3cm}|p{3cm}|p{3cm}}
@@ -190,9 +176,17 @@ We conducted a data-extraction pilot on our benchmark papers. We evaluated the f
         \hline
          \textbf{Variable} & \textbf{Description} & \textbf{Format/Allowed values (examples) } & \textbf{Notes}\\
          \hline
+         \endhead
+
+         \multicolumn{4}{r}{Continued on next page}
+         \endfoot
+
+         \multicolumn{4}{r}{End of Table}
+         \endlastfoot
+         
         extractor initial & Initials of the data extractor & Text (e.g., ALM, ML) & For inter-rate calibration and audit trail\\
         \hline
-        study id & Unique ID assigned to the review & Text (e.g., pichler\_2023) & Use firstauthor\_year format\\
+        study id & Unique ID assigned to the review & Text (e.g., pichler\_2023\_methods) & Use the first author, the published year, and the published journal\\
         \hline
         doi & Digital Object Identifier of the review & Text (e.g., 10.1111/2041-210X.14096) & Extract from journal metadata\\
         \hline
@@ -208,15 +202,15 @@ We conducted a data-extraction pilot on our benchmark papers. We evaluated the f
         \hline
         data source type & The source of data used in the primary studies reviewed & Field-collected, Lab-generated, Public repository, Unclear & Refers to the origin of the data that ML models are trained on. Multiple categories are allowed\\
         \hline
-        ai model category & Broad category of AI models discussed & Supervised, Unsupervised, Reinforcement & Multiple categories are allowed\\
+        ai model category & Broad category of AI models discussed & Supervised, Unsupervised, Reinforcement & Multiple categories are allowed. Terms must be explicitly used in the article\\
         \hline
-        specific algorithms & Does the review focus on a specific, named algorithm or architecture? & Yes, No, Unclear & Yes for a focus like "Random Forest" or "Convolutional Neural Networks"\\
-        \hline
-        specific algorithms comment & If yes, what specific algorithms or architectures are mentioned? & Free text (e.g., SVM, GAN, AlphaFold) & List the exact terms used by the authors\\
-        \hline
-        ai algorithms & What specific AI algorithms are reviewed & CNN, RNN, LLM, Decision trees, boosted regression trees, random forest, SVM & Multiple categories, only some examples are included since more classifications may be acceptable\\
+        ai algorithms & What specific AI algorithms are reviewed & CNN, RNN, LLM, Decision trees, boosted regression trees, random forest, SVM, other & Multiple categories, only some examples are included since more classifications may be acceptable. Terms must be explicitly used in the article\\
         \hline
         ai algorithms comments & Any observations about the AI algorithms listed in the review & Free text (e.g., other algorithms) & \\
+        \hline
+        specific named algorithms & Does the review specifies a named algorithm or architecture? & Yes, No, Unclear & Yes for a focus like "AlexNet" or "ResNet-45"\\
+        \hline
+        specific algorithms comment & If yes, what specific algorithms or architectures are mentioned? & Free text (e.g., AlexNet, ResNet-45, AlphaFold) & List the exact terms used by the authors\\
         \hline
         compared to stats & Does the review explicitly compare AI models to traditional statistical methods? & Yes, No, Unclear & Yes if there is a direct comparison to methods like linear/logistic regression\\
         \hline
@@ -232,13 +226,13 @@ We conducted a data-extraction pilot on our benchmark papers. We evaluated the f
         \hline
         temporal analysis & Does the review do any temporal analysis of the data reviewed? & Yes, No & Yes if there is a comparison through time of any of the reviewed data. No otherwise\\
         \hline
-        temporal analysis comment & If yes, what kind of analysis was made & Free text (e.g., ...) & List what elements are compared through time\\
+        temporal analysis comment & If yes, what kind of analysis was made & Free text (e.g., Compares number citations of papers using ML through the last decade, compares number of papers using LLMs and number using DNNs in the last 20 years) & List what elements are compared through time\\
         \hline
         identified gaps & Does the review explicitly identify gaps in the research? & Yes, No, Unclear & Yes if the authors state what is missing or needs more work\\
         \hline
         identified gaps comment & If yes, what research gaps are mentioned? & Free text (e.g., Need for more interpretable models, Lack of causal inference methods) & List the exact gaps identified \\
         \hline
-        general notes & Any other relevant comments or observations & Free text (e.g., Main focus was on deep learning, but briefly mentioned classical ML) & Use for important context not captured elsewhere 
+        general notes & Any other relevant comments or observations & Free text (e.g., Main focus was on deep learning, but briefly mentioned classical ML) & Use for important context not captured elsewhere
          %\hline
     \label{tab:systMap}
     \end{longtable}
@@ -246,37 +240,104 @@ We conducted a data-extraction pilot on our benchmark papers. We evaluated the f
 
 \subsection{Critical appraisal}
 
-To accomplish our second objective, we will use a modified composite version of the RepOrting standards for Systematic Evidence Syntheses (ROSES) (\citep{haddaway2018roses}) for Systematic Map Reports (\citep{haddaway2017rosesMap}) and for Systematic Review Reports (\cite{haddaway2017rosesReview}). This is because our review map will likely include both systematic maps and systematic reviews. To create a composite version, we reviewed the above two ROSES checklists and selected the assessment items most relevant to our study. Table \ref{tab:ROSES} shows our ROSES-derived checklist (it specifies which checklist each item is derived from; we use both if the item is in the Map and Review Reports). Note, each element in our checklist is a Yes or No question (in few cases also Unclear), following the ROSES checklists.
+To accomplish our second objective, we will use a modified composite version of the RepOrting standards for Systematic Evidence Syntheses (ROSES) (\citep{haddaway2018roses}) for Systematic Map Reports (\citep{haddaway2017rosesMap}) and for Systematic Review Reports (\cite{haddaway2017rosesReview}). This is because our review map will likely include both systematic maps and systematic reviews. To create a composite version, we reviewed the above two ROSES checklists and selected the assessment items most relevant to our study. Table \ref{tab:ROSES} shows our ROSES-derived checklist. Note, each element in our checklist is a Yes or No question (in a few cases also Partially and NA), following the ROSES checklists. The data will be extracted using a Google Form which will result in a spreadsheet containing all data.
 
-As with the systematic mapping data extraction, we conducted a pilot on our benchmark papers to assess the feasibility of extracting the desired data points. We made small adjustments as needed. The average extraction time was $9$ minutes per review. Given an expected total of $60$ reviews, we estimate data extraction for the critical appraisal will take approximately $540$ minutes.
+As with the systematic mapping data extraction, we conducted a pilot on $6$ of our benchmark papers to assess the feasibility of extracting the desired data points. The pilot was conducted by a single person. The extracted data was recorded in a spreadsheet in which each column was the Topic of each data type in Table \ref{tab:ROSES}, and each row represents each document. We made small adjustments as needed. The average extraction time was $9$ minutes per review. Given an expected total of $60$ reviews, we estimate data extraction for the critical appraisal will take approximately $540$ minutes ($9$ hours).
 
-\begin{longtable}{p{2cm}|p{5.5cm}|p{1.5cm}|p{1.5cm}}
+\begin{longtable}{p{2cm}|p{5.7cm}|p{2.75cm}}
 \caption{Data to be extracted as critical appraisal of included reviews.}\\
 %    \centering
         \hline
-         \textbf{Topic} & \textbf{Description} & \textbf{ROSES checklist source} & \textbf{Allowed values}\\
+         \textbf{Topic} & \textbf{Description} & \textbf{Allowed values} \\
          \hline
-         Protocol & Provided citation, DOI or open-access to published protocol & Both & Yes, No \\
+         \endhead
+
+         \multicolumn{3}{r}{Continued on next page}
+         \endfoot
+
+         \multicolumn{3}{r}{End of Table}
+         \endlastfoot
+         
+         extractor initial & Initials of the data extractor & Full text (e.g., ALM, ML)\\
         \hline
-         Search string & Provided Boolean-style full search string and state the platform for which the string is formatted (e.g. Web of Science format) & Both & Yes, No, Unclear \\
+        study id & The combination of the first author, the published year, and the published journal. & Full text (e.g., pichler\_2023\_methods)\\
         \hline
-         Languages - bibliographics databases & Provided a list of languages used in bibliographic database searches & Both & Yes, No \\
+        doi & Digital Object Identifier of the review & Text (e.g., 10.1111/2041-210X.14096)\\
         \hline
-         Estimating comprehensiveness of the search & Described the process by which the comprehensiveness of the search strategy was assessed (i.e. list of benchmark articles) & Both & Yes, No \\
+        supplemental files & If the authors provided any supplemental materials, select “Yes”; otherwise, choose “No.” & Yes, No \\
         \hline
-         Screening strategy & Described the methodology for screening articles/studies for relevance. Methods for consistency of screening decisions (at title, abstract, and full texts levels) checking must be described & Both & Yes, No, Unclear\\
+         supplemental files note & If you notice anything else that may be relevant, please describe it. & Full text \\
         \hline
-         Description of review process & Described the review process, including the volume of evidence identified from all sources and retained through each stage of the review. Must also display the number of articles/studies included at all stages of the review in a flow diagram, including the number of articles/studies excluded at each stage & Both & Yes, No\\
+         protocol & The authors provided a citation, DOI, or open access to a published protocol (e.g., “we pre-registered our protocol in OSF (URL)”). If the link has expired or was incorrect, select “No.” & Yes, No \\
         \hline
-         Full text screening results & Provided the number of articles retained following full text screening & Both & \\
+        protocol note & If you notice anything else that may be relevant, please describe it. & Full text \\
         \hline
-         Extracted data & Provided a file and/or table containing raw extracted quantitative or qualitative data (study findings) from included studies & Review Reports & Yes, No\\
+         languages mentioned & The authors reported which languages were included in the literature search policy. Select “Yes” if any languages (e.g., English only; English and French) were explicitly stated. & Yes, No \\
         \hline
-         Systematic map database & Provided metadata (i.e. detailed description of extracted raw variables) in a separate table, list and/or file for included studies & Both & Yes, No\\
+        languages mentioned note & List all languages if reported. & Full text \\
         \hline
-         Knowledge gaps and clusters & Described knowledge gaps (unrepresented or underrepresented subtopics that warrant further primary research) and knowledge clusters (well-represented subtopics that are amenable to full synthesis via systematic review) & Map Reports & Yes, No, Unclear\\
+        languages non-english & The authors indicated whether they considered non-English studies during the screening process. Select “Yes” if the authors made an effort to include non-English studies, regardless of whether any such studies were ultimately included in the final dataset. & Yes, No \\
         \hline
-         Competing interests & Described any financial or non-financial competing interests that the review authors may have or provided a statement of the absence of any potential competing interests & Both & Yes, No
+        languages non-english note & If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        languages non-english included & If the authors explicitly stated that they intended to include any studies in languages other than English in their final dataset, select “Yes".  & Yes, No \\
+        \hline
+        languages non-english included note & If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        search string english & The authors provided a comprehensive Boolean-style search string and specified the platform for which the string is formatted. If multiple literature databases were used but only one full search string was provided as an example, label it as “Partially.” If the authors listed keywords and mentioned the database used but did not provide a complete Boolean string, or provided a search string without specifying search fields, label it as “Partially.” If they only listed keywords with no indication of how they were combined or operationalised, select “No.”  & Yes, No, Partially \\
+        \hline
+        search string english note & If you select “Partially”, briefly explain the reason. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        search string non-english & The authors reported using non-English search terms or provided search strings formatted for non-English databases as part of their search strategy. If you select “Yes” for the "languages non-english included" column, choose “Yes”, No”, or “Partially.” If authors provided non-English search terms or complete non-English search strings, and the authors specified the database(s) for which these terms or strings were used, select “Yes”. Select “Partially ” if any of the following apply: The authors provided non-English search terms or search strings, but did not specify the database(s) for which they were intended. The authors claimed to use non-English database(s), but the search terms they provided (if any) are English only. The authors stated that multiple non-English search terms were used, but only a subset of these terms was reported in the study. Select “No” category if no non-English search terms or search strings were provided. Select “NA” if "languages non-english included" = “No” and multilingual searching is not relevant (e.g., the scope is limited to English-speaking regions).  & Yes, No, Partially, NA \\
+        \hline
+        search string non-english note & If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        search comprehensiveness & The authors described how the comprehensiveness of the search strategy was evaluated. They should list benchmark papers used to test whether the final search string could retrieve them, ideally with details this trial-and-error process (e.g., in the supplementary materials). If only one of these elements (either listing benchmark papers or describing the benchmarking process) was reported, this item will be coded as “Partially.” & Yes, No, Partially \\
+        \hline
+        search comprehensiveness note & If you select “Partially”, briefly explain the reason. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        screening strategy & The authors reported using non-English search terms or provided search strings formatted for non-English databases as part of their search strategy. If you select “Yes” for the "languages non-english included" column, choose “Yes”, No”, or “Partially.” If authors provided non-English search terms or complete non-English search strings, and the authors specified the database(s) for which these terms or strings were used, select “Yes”. Select “Partially” if any of the following apply: The authors provided non-English search terms or search strings, but did not specify the database(s) for which they were intended. The authors claimed to use non-English database(s), but the search terms they provided (if any) are English only. The authors stated that multiple non-English search terms were used, but only a subset of these terms was reported in the study. Select “No” category if no non-English search terms or search strings were provided. Select “NA” if "languages non-english included" = “No” and multilingual searching is not relevant (e.g., the scope is limited to English-speaking regions). & Yes, No, Partially, NA \\
+        \hline
+        screening strategy note & If you select "Partially", briefly explain the reason. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        data extraction reproducibility & The authors described the data extraction process (who extracted, double-checking, and consistency). If at least one required aspect is missing, select "Partially." If a single author wrote the synthesis study, assign "NA". & Yes, No, Partially, NA \\
+        \hline
+        data extraction reproducibility note & If you select "Partially", briefly explain the reason. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        review process & The authors reported and visualised the review flow and the number of studies retained at each stage (e.g., in a PRISMA/ROSES diagram). If a complete flow diagram is provided and includes essential elements such as database-level hits, screening numbers, and reasons for exclusion at full-text screening, choose “Yes.” If a flow diagram is provided but lacks key components, such as missing database-specific hit counts, missing reasons for full-text exclusions, or incomplete reporting of intermediate steps, select "Partially." If no flow diagram is provided, and the review flow is not described elsewhere in the manuscript/supplemental materials, assign "No." & Yes, No, Partially \\
+        \hline
+        review process note & If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        full text screening results & The authors provided the number of studies retained following full-text screening. & Yes, No \\
+        \hline
+        full text screening results note & If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        included paper list & The authors provided bibliographic information (for example, author, year, title, DOI) for all studies included in the synthesis. These details may be reported in the main text or in supplemental materials/external repositories (e.g., Zenodo, Figshare, GitHub). In some cases, bibliographic information may be embedded within raw data files rather than presented as a clear list of included studies. & Yes, No \\
+        \hline
+        included paper list note & If "Yes", indicate where you found this information. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        excluded paper list & The authors provided bibliographic information for studies excluded at the full-text screening stage, including reasons for exclusion. These details are often reported in supplemental materials/external repositories (e.g., Zenodo, Figshare, GitHub). & Yes, No \\
+        \hline
+        excluded paper list note & If "Yes", indicate where you found this information. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        raw data provided & The authors provided the raw data. If it is missing or the information indicating where the data are located is incorrect (for example, a broken link), assign "No." Data can be found in the main text or in supplemental materials/external repositories (e.g., Zenodo, Figshare, GitHub), depending on how the authors chose to share it. Data can be found in the main text, the supplemental materials, or external repositories (e.g., Zenodo, Figshare), depending on how the authors chose to share it. & Yes, No \\
+        \hline
+        raw data provided note & If "Yes", indicate where you found this information. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        metadata provided & The authors provided the accompanying metadata (variable definitions, coding rules, and descriptions of how each variable was recorded). If metadata is missing or the information indicating where the data are located is incorrect (for example, a broken link), assign "No." Metadata can be found in the main text or in supplemental materials/external repositories (e.g., Zenodo, Figshare), depending on how the authors chose to share it. & Yes, No \\
+        \hline
+        metadata provided note & If "Yes", indicate where you found this information. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        code provided & The authors provided analysis and/or figure-generation computer code/scripts. If code/script is missing or the information indicating where the code/script file(s) are located is incorrect (for example, a broken link), assign "No." Code/scripts can be found in the main text or in supplemental materials/external repositories (e.g., Zenodo, Figshare), depending on how the authors chose to share it. & Yes, No \\
+        \hline
+        code provided note & If "Yes", indicate where you found this information. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        competing interests & The authors described any financial or non-financial competing interests or provided a statement declaring none. Note that such statements may appear only in the online version or only in the PDF version, so both should be checked carefully. & Yes, No \\
+        \hline
+        competing interests note & If "Yes", indicate where you found this information. If you notice anything else that may be relevant, please describe it. & Full text \\
+        \hline
+        general note & Any additional notes & Full text\\
+        & &
         %\hline
 \label{tab:ROSES}
 \end{longtable}
@@ -284,7 +345,9 @@ As with the systematic mapping data extraction, we conducted a pilot on our benc
 
 \subsection{Bibliometric analysis}
 
-Table \ref{tab:critApp} lists the data we will extract for the bibliometric analysis, corresponding to our third objective. We will extract information regarding the institutions and countries of first and corresponding authors from the following sources:
+%Table \ref{tab:critApp} lists the data we will extract for the bibliometric analysis, corresponding to our third objective. 
+
+We will extract information on bibliometrics to accomplish our third objective (quantify the reach and impact of the systematic reviews and maps) (Table \ref{tab:critApp}). The data will be extracted using a Google Form which will result in a spreadsheet containing all data. The data will be extracted using a Google Form which will result in a spreadsheet containing all data. We will extract information regarding the institutions and countries of first and corresponding authors from the following sources:
 \bei
 \item From Scopus if:
 \bei 
@@ -292,28 +355,37 @@ Table \ref{tab:critApp} lists the data we will extract for the bibliometric anal
 \item The review is indexed exclusively in the Scopus database.
 \eei
 \item From Web of Science if the review is indexed only in Web of Science.
-\item If review is not indexed  in either Web of Science or Scopus, data will be extracted manually from the full-text review.
+\item If the review is not indexed in either Web of Science or Scopus, data will be extracted manually from the full-text review.
 \eei
 
 
 %For papers found with both the Web of Science and Scopus search strings, or only with the Web of Science search string, bibliometric information for the first and corresponding authors' institutions and countries will be obtained using the Web of Science tools, based on each paper's DOI. For papers available only in the Scopus database, the information will be extracted manually from each paper. 
 \begin{longtable}{p{1.5cm}|p{3cm}|p{3cm}|p{3cm}}
-\caption{Data for Bibliometric analysis}\\
+\caption{Data for Bibliometric analysis. \textsuperscript{*} List of ISO 3166-1 country codes: https://en.wikipedia.org/wiki/ISO\_3166-1}\\
 %    \centering
         \hline
          \textbf{Variable} & \textbf{Description} & \textbf{Format/Allowed values} & \textbf{Notes}\\
          \hline
+
+         \endhead
+
+         \multicolumn{4}{r}{Continued on next page}
+         \endfoot
+
+         \multicolumn{4}{r}{End of Table}
+         \endlastfoot
+         
          doi & Digital Object Identifier of the review & Text (e.g., 10.1111/2041-210X.14096) & Extract from journal metadata\\
         \hline
-         authors & Full list of authors & Free text (e.g., ...) & \\
+         authors & Full list of authors & Free text (e.g., Kitzes, J., Poo Hernandez, S.) & \\
         \hline
-         affiliation & Institutional and country affiliations & Free text  (e.g., ...) & \\
+         affiliation & Institutional and country affiliations & Free text  (e.g., University of Alberta, CAN., Carnegie Mellon University, USA.) & \\
         \hline
-         corr country affiliation & Country of corresponding author & Country name (e.g., ...) &  ...\\
+         corr country affiliation & Country of corresponding author & Country name (e.g., MEX, CAN) & Follow ISO 3166-1 alpha 3\textsuperscript{*} standard\\
         \hline
-         first country affiliation & Country of first author & Country name (e.g., ...) & Might be the same author as the corresponding author.  ... \\
+         first country affiliation & Country of first author & Country name (e.g., MEX, CAN) & Might be the same author as the corresponding author. Follow ISO 3166-1 alpha 3\textsuperscript{*} standard \\
         \hline
-         n authors & Number of authors & Integer (e.g., 2) \\
+         n authors & Number of authors & Integer (e.g., 2) & \\
         \hline
          citations scopus & Citation counts from Scopus & Integer (e.g., 11) & \\
         \hline
@@ -322,8 +394,96 @@ Table \ref{tab:critApp} lists the data we will extract for the bibliometric anal
 \label{tab:critApp}
 \end{longtable}
 
-%\subsection{Data extraction pilot}
-%We conducted a data-extraction pilot on the papers that made it through the screening process. We evaluated whether the desired data points can be extracted from the papers and adjusted accordingly. We also estimated the time for data extraction for each type of review as the average time it took to do the extraction on the papers that are in our benchmark. The average was $14.5$ minutes. We expected to perform data extraction on $60$ reviews, so we estimated it would take $870$ minutes.
+\section{Data analyses}
+
+Following data extraction, we will summarize and visualize the data in Python for each objective. For systematic mapping we will produce figures that match the structure of each variable (e.g., box plots, network diagrams, and treemaps) to determine what are the knowledge gaps and potential biases. For critical appraisal we will be using traffic light plots to assess their reporting quality. For bibliometric analysis, we will use VOSviewer (\cite{van2010software}) to identify collaboration networks and citation patterns.
+
+\section{Additional information}
+\subsection{Contact details for further information}
+Sergio Poo Hernandez
+
+pooherna@ualberta.ca
+
+\subsection{Organization affiliation of the Review}
+University of Alberta, Canada
+
+\subsection{Review team members and their organizational affiliations}
+
+\bei
+\item Sergio Poo Hernandez, Collaboration for Open Science and Synthesis in Ecology and Evolution, Department of Biological Sciences, University of Alberta, Edmonton, AB, Canada.
+
+\item Santiago Ortega, Collaboration for Open Science and Synthesis in Ecology and Evolution, Department of Biological Sciences, University of Alberta, Edmonton, AB, Canada.
+
+\item Ayumi Mizuno, Collaboration for Open Science and Synthesis in Ecology and Evolution, Department of Biological Sciences, University of Alberta, Edmonton, AB, Canada.
+
+\item Eduardo S.A. Santos, Collaboration for Open Science and Synthesis in Ecology and Evolution, Department of Biological Sciences, University of Alberta, Edmonton, AB, Canada.
+
+\item Sarah Young, Carnegie Mellon University Libraries, Carnegie Mellon University, Pittsburgh, Pennsylvania, USA.
+
+\item Malgorzata Lagisz, Collaboration for Open Science and Synthesis in Ecology and Evolution, Department of Biological Sciences, University of Alberta, Edmonton, AB, Canada.
+
+\item Shinichi Nakagawa, Collaboration for Open Science and Synthesis in Ecology and Evolution, Department of Biological Sciences, University of Alberta, Edmonton, AB, Canada.
+\eei
+
+\subsection{Type of method of review}
+Systematic map.
+
+\subsection{Anticipated or actual start date}
+TBD
+
+\subsection{Anticipated end date}
+13 February 2026
+
+\subsection{Funding sources/sponsors}
+Canada Excellence Research Chair Program (CERC-2022-00074).
+
+\subsection{Conflicts of interest}
+None.
+
+\subsection{Language}
+English, Spanish.
+
+\subsection{Country}
+Canada.
+
+\subsection{Stage of review}
+Piloting.
+
+\subsection{Subject index terms status}
+NA.
+
+\subsection{Subject index terms}
+NA.
+
+\subsection{Date of registration in OSF}
+TBD
+
+\subsection{Date of first submission}
+TBD
+
+\subsection{Details of any existing review of the same topic by the same authors}
+None
+
+\subsection{Stage of the review at the time of submission}
+\begin{longtable}{p{4.5cm}|p{3cm}|p{3cm}}
+%    \centering
+        \hline
+         \textbf{Stage} & \textbf{Started} & \textbf{Completed}\\
+         \hline
+         Preliminary searches & Yes & Yes\\
+        \hline
+         Piloting of study selection & Yes & Yes\\
+        \hline
+        Piloting of data extraction & Yes & Yes\\
+        \hline
+         Formal screening of research results against eligibility criteria & No & No \\
+        \hline
+         Data extraction & No & No \\
+        \hline
+         Data analysis & No & No 
+        %\hline
+\label{tab:critApp}
+\end{longtable}
 
 \bibliographystyle{plainnat}
 \bibliography{refs}
